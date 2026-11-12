@@ -42,7 +42,7 @@ python-mutation-testing-lab/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/inteligenciaia1021-ai/python-mutation-testing-lab.gitORY_URL
+git clone https://github.com/inteligenciaia1021-ai/python-mutation-testing-lab.git
 cd python-mutation-testing-lab
 ```
 
