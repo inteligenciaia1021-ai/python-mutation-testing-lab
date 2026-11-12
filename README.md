@@ -46,33 +46,31 @@ git clone https://github.com/inteligenciaia1021-ai/python-mutation-testing-lab.g
 cd python-mutation-testing-lab
 ```
 
-Replace `https://github.com/inteligenciaia1021-ai/python-mutation-testing-lab.git` with your repository URL.
-
 ### 2. Create a virtual environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate it on Windows:
+### 3. Activate the environment (Windows)
 
 ```powershell
 .venv\Scripts\Activate.ps1
 ```
 
-### 3. Install dependencies
+### 4. Install dependencies
 
 ```bash
 python -m pip install pytest
 ```
 
-### 4. Run the unit tests
+### 5. Run the unit tests
 
 ```bash
 python -m pytest -q
 ```
 
-### 5. Run the mutation testing script
+### 6. Run mutation testing
 
 ```bash
 python mutar.py
