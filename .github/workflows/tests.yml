@@ -1,5 +1,4 @@
 
-
 name: Python Tests and Mutation Testing
 
 on:
@@ -27,7 +26,20 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Run tests with coverage
-        run: python -m pytest --cov=desconto --cov-report=term-missing --cov-fail-under=100 -q
+        run: |
+          python -m pytest \
+            --cov=desconto \
+            --cov-report=term-missing \
+            --cov-report=html \
+            --cov-fail-under=100 \
+            -q
 
       - name: Run mutation testing
         run: python mutar.py
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-coverage-report
+          path: htmlcov/
+          retention-days: 14
