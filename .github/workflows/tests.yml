@@ -1,4 +1,5 @@
-name: Python Tests
+
+name: Python Tests and Mutation Testing
 
 on:
   push:
@@ -26,3 +27,6 @@ jobs:
 
       - name: Run unit tests
         run: python -m pytest -q
+
+      - name: Run mutation testing
+        run: python mutar.py
